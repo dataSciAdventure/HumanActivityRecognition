@@ -55,4 +55,4 @@ molten <- melt(combined,id=c("subject","activity"),na.rm=TRUE)
 combinedMean <- dcast(molten,subject+activity~variable,mean)
 
 # Write out file with tidy data set 
-write.table(combinedMean,"UCIHAR_averages_tidy.txt") 
+write.table(combinedMean,"UCIHAR_averages_tidy.txt",row.names=FALSE) 
