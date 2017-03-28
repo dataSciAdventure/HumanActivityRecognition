@@ -1,4 +1,4 @@
-# ${1:Human Activity Recognition}
+# Human Activity Recognition
 Peer-graded Assignment for Getting and Cleaning Data - Week 4 
 ## Explanation
 The included R script, run_analysis.R, does these things:
