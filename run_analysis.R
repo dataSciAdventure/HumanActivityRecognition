@@ -1,5 +1,5 @@
-## Set working directory
-setwd("~/R_working/DataCleaningWeek4")
+## Set working directory (uncomment and modify the following line to set directory)
+# setwd("~/R_working/DataCleaningWeek4")
 
 ## Load reshape2 package
 ## From: http://seananderson.ca/2013/10/19/reshape.html
@@ -24,7 +24,7 @@ activityLabels[,2] <- as.character(activityLabels[,2])
 features <- read.table("UCI HAR Dataset/features.txt")
 features[,2] <- as.character(features[,2])
 
-# Extract just the mean and std data
+# Prepare to extract just the mean and std data
 featuresExtracted <- grep(".*mean.*|.*std.*",features[,2])
 featuresExtracted.names <- features[featuresExtracted,2]
 featuresExtracted.names = gsub('-mean','Mean',featuresExtracted.names)
