@@ -27,8 +27,8 @@ features[,2] <- as.character(features[,2])
 # Prepare to extract just the mean and std data
 featuresExtracted <- grep(".*mean.*|.*std.*",features[,2])
 featuresExtracted.names <- features[featuresExtracted,2]
-featuresExtracted.names = gsub('-mean','Mean',featuresExtracted.names)
-featuresExtracted.names = gsub('-std','Std',featuresExtracted.names)
+featuresExtracted.names <- gsub('-mean','Mean',featuresExtracted.names)
+featuresExtracted.names <- gsub('-std','Std',featuresExtracted.names)
 featuresExtracted.names <- gsub('[-()]','',featuresExtracted.names)
 
 # Load and bind the test and train data by column
