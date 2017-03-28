@@ -1,7 +1,7 @@
 # Human Activity Recognition
 Peer-graded Assignment for Getting and Cleaning Data - Week 4 
 ## Explanation
-The included R script, run_analysis.R, does these things:
+The included R script, run_analysis.R:
 1. Sets the working directory (optional, commented out in this distribution) and loads the reshape2 package
 2. Detects the UCI HAR Dataset; downloads and/or unzips it if not found
 3. Loads the activity labels and features
